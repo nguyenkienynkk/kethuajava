@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập thông tin sinh viên ");
         Scanner sc = new Scanner(System.in);
@@ -22,17 +23,18 @@ public class Main {
         System.out.println("Điểm trung bình : ");
         int dtb = Integer.parseInt(sc.nextLine());
         System.out.println("Email : ");
+
         String email = sc.nextLine();
         Student sv;
-        sv = new Student(hoTen, ngaysinh,gioitinh,diachi,email, dtb, ma);
+        sv = new Student(hoTen, ngaysinh, gioitinh, diachi, email, dtb, ma);
         sv.thongTinSv();
         if (dtb > 8) {
             System.out.println(" được học bổng ");
         } else {
             System.out.println(" không Được học bổng : ");
         }
-    }
 
+    }
 
 }
 
